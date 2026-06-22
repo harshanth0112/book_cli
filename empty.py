@@ -1,10 +1,9 @@
-import books
-class error:
-    def __init__(self):
-        self.bookstores=books.books.bookstores
+class booknotavailable:
+    def __init__(self,book):
+        self.book = book
 
     def check(self):
-        if self.bookstores==[]:
+        if self.book.bookstores==[]:
             print("No books available")
             return False
         else:
